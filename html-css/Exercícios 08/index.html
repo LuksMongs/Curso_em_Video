@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>OUTRAS FORMATAÇÕES</h1>
+    <hr>
+    <H2>Código-Fonte / Pré-Formatação</H2>
+        <p>São comandos ou parte de códigos. por exemplo o comando document.gentlementById('teste') é escrito em linguagem JavaScript.<br>
+        Nesse exemplo acima ler o comando é embolado por ser uma fonte <strong>não</strong> MONOESPAÇADA. Para torna-la uma fonte do tipo <br>
+        MONOESPAÇADA eu terei que usar o CODE. Ficando <code>document.gentlementById('teste')</code>. Os espaços de cada letra são iguais entre eles.</p>
+        <p>Contudo o CODE não respeita quebra de linha. segue o exemplo abaixo: <br>
+        Usando apenas CODE: <br>
+        <code>
+            num = int(input('Digite um númeo'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR)
+            else:
+                print(f'O número é IMPAR)
+            print('Fim do Programa')
+        </code></p>
+        <p>Usando PRE e CODE: <br>
+            <pre>
+                <code>
+            num = int(input('Digite um númeo'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR)
+            else:
+                print(f'O número é IMPAR)
+            print('Fim do Programa')
+                </code>
+            </pre>
+            Muito mais organizado.
+        </p>
+    <h2>Citações</h2>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>. As aspas aqui foram adicionadas com sentido <br>
+        semântica através da tag Q, pois se tratava de uma citação (de alguém). Dando um sentido a frase e não apenas forma com "".</p>
+    <h2>Citações Completas</h2>
+        <p>São citaçõe do tipo BLOCKQUOTE. para isso usamos esse comando blockquote. E para mais completo aindo, pode usar <br>
+        juntamente ao BLOCKQUOTE o CITE="endereço na web onde você copiou a sitação".</p>
+        <blockquote cite="http://nãolembro_o_endereco_onde_ouvi_falar_sobre_lorem_a_primeira_vez">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos impedit beatae voluptas modi consequuntur ea est praesentium, magnam inventore in eius cumque reprehenderit veritatis, laborum minima quasi, sint corporis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem inventore quaerat esse earum quasi, quam ad sint et quisquam iusto aspernatur labore eos, sapiente atque rem praesentium facere expedita eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus est vero sapiente impedit nisi esse, maiores harum iste ipsum odit, minus laborum accusantium? Inventore porro esse, quas id debitis quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem illum illo, deleniti soluta quaerat ad quis neque fugit quisquam nulla officiis est unde assumenda itaque similique, doloremque dolores iusto. <br>
+        </blockquote>
+        <p>Note que o endereço eletronico não altera em nada no texto. É mesmo só uma referência ao autor.</p>
+    <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou curtindo demais.</p>
+    <h2>Texto Invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas no HTML</bdo>. Comando usado BDO DIR="RTL" -->É o comando mais inútil do mundo. rtl = right to left.</p>
+</body>
+</html>

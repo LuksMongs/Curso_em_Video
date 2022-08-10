@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table{
+            border: 6px solid blue;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 2px solid red;
+            padding: 8px;
+        }
+
+        tr.linha{
+            background-color: yellow;
+        }
+
+        td.dado{
+            background-color: lime;
+        }
+
+    </style>    
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <table>
+        <tr> <!--minha primeira linha-->
+            <td>A1</td> <!--Dado 01-->
+            <td>B1</td> <!--Dado 02-->
+            <td>C1</td> <!--Dado 03-->
+        </tr>
+        <tr class="linha"> <!--minha segunda linha-->
+            <td>A2</td> <!--Dado 01-->
+            <td>B2</td> <!--Dado 02-->
+            <td>C2</td> <!--Dado 03-->
+        </tr>
+        <tr> <!--minha terceira linha-->
+            <td>A3</td> <!--Dado 01-->
+            <td>B3</td> <!--Dado 02-->
+            <td>C3</td> <!--Dado 03-->
+        </tr>
+        <tr> <!--minha quarta linha-->
+            <td>A4</td> <!--Dado 01-->
+            <td>B4</td> <!--Dado 02-->
+            <td class="dado">C4</td> <!--Dado 03-->
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+</body>
+</html>

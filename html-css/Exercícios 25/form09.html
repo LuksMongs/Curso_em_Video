@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo Fomulário 9</h1>
+    <form action="cadastro.php">
+        <p---->
+            <label for="inum">número:</label>
+            <input type="range" name="num" id="inum" min="0" max="10"
+            oninput="ival.innerHTML= Number(inum.value)">
+            <output name="val" id="ival">5</output> <!-- o valor 5 é Porque a BARRA RANGE iniciará no valor 5-->
+  
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+</html>

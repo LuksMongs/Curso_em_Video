@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dpto. Imigração</title>
+</head>
+<body>
+    <h1>Declaração de Origem</h1>
+    <p>Responda:</p>
+    Em que PAÍS você Nasceu? 
+    <input type="text" name="cxnac" id="cxnac">
+    <input type="button" value="Declarar" onclick="confirmar()">
+    <div id="res">sua resposta estará aqui...</div>
+    <script>
+        function confirmar(){
+            var nacio = window.document.getElementById('cxnac')
+            var resposta = window.document.getElementById('res')
+            var exibe = nacio.value
+            resposta.innerText = 'Ok! Você é do ' + exibe
+        }
+    </script>
+</body>
+</html>

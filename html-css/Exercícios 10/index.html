@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+        <p>Você pode acessar um local da web através de um link específico <a href="http://youtube.com/">como esse por exemplo</a> que foi adicionado ao código html. <br>
+        utilizando a ANCORA &lt; A &gt; e o parâmetro de referência HREF="enderco_http_do_local_da_web". <br>
+        dessa maneira o direcionamento é feito na mesma aba do navegador.</p>
+        <p>Acessar um endereço com a abertura de uma NOVA aba no navegador, é feita adicionando o parâmetro TARGET="_BLANK" ao comando &lt;a href="http://youtube.com/" targe="_blank"&gt; <br></p>
+        <p>Hoje é indicado ADICIONAR além do TARGET o parâmetro REL=" ". ficando assim: <br> 
+        &lt;a href="http://youtube.com/" targe="_blank" rel="extenal"&gt;. Testando:
+        <a href="http://youtube.com/" target="_blank" rel="external">Youtube</a> </p>
+    <h1>Usando Links Internos</h1>
+        <p>Para criar um link interno, ou seja, entre as páginas criadas em um mesmo local também utilizamos a ANCORA (A) com parâmetro (href=" "). Contudo a indicação do HREF será</br>
+        um caminho local e não um HYPERLINK (endereço web). E o complemento é o parâmetro REL="PREV ou NEXT". <br> 
+        Para visitar a minha Págia 02, clique no link <a href="/html-css/Exercícios 10/pagina02.html" rel="next">Página 02</a>.</p>
+        <p>Para avisar ao mecanismo de busca que não há um aval acerca do link que você está disponibilizando, <br>
+        adicione ao REL="nofollow". É um aviso sobre isso (não entendi nada desse NOFOLLOW). Segue o exemplo: <br>
+        Esse site está sendo patrocinado pelo <a href="http://orkut.com" target="_blank" rel="nofollow">Orkut</a>.</p>
+    <h1>Links Internos em Pastas Diferentes</h1>
+        <p>Quando o arquivo HTML está em uma pasta diferente da pasta index.html (pagina principal), devemos indicar o caminho completo até o <br>
+        arquivo html desejado (no caso, pagina 03). Para acessar a página clique <a href="/html-css/Exercícios 10/noticias/pagina03.html">bem aqui</a>.</p>
+        <p>Estando navegando no arquivo HTML da pasta diferente a do INDEX o parâmetro usado no caso é "../index.html" o importante aqui é o (../) que indica <br> 
+        uma pasta anterior</p>
+        <p>Neste link você <a href="../index.html"> volta a página inicial</a>.</p>
+    <h1>Links para Download</h1>
+        <ol>
+            <li><a href="/html-css/Exercícios 10/Livros/10 - Ligações em toda parte.pdf">Livro em PDF</a></li>              
+            <li><a href="/html-css/Exercícios 10/Livros/pdf-icon.zip">Livro em ZIP</a></li>
+        </ol>
+        <p>Deixar um arquivo para download, é usado o parametro A HREF="caminho_do_local_do_arquivo". Caso não funcione <br>
+        adicionar o parâmetro DOWNLOAD="nome_do_arquivo.extensao" e TYPE="application/pdf". </p>
+        <p>Cada TIPO de arquivo tem sua APLLICATION específica. São encontradas no site https://www.iana.org/assignments/media-types/media-types.xhtml <br>
+        Os mais comuns são: <img src="/html-css/Exercícios 10/Livros/applicattion-populares.jpg" alt="lista-applications-populares"></p>
+</body>
+</html>

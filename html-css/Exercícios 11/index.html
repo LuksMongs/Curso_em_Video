@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="imagens/img300.jpg" type="image/jpg">
+        <source media="(max-width: 920px)" srcset="imagens/img700.jpg" type="image/jpg">
+        <img src="imagens/img900.jpg" alt="imagem responsiva">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <audio src="midia/happy-mistake.mp3" autoplay controls loop></audio>
+    <!--Mídias mais comuns para navegadores: MP3, Wav e OGG -->
+    <!--Com AUTOPLAY a música começa a tocar automaticamente ao acessar o site-->
+    <!--Com o Parametro LOOP o arquivo de áudio reinicia sempre que terminar automaticamente-->
+    <p>outra maneira de CARREGAR áudio no site:</p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    <!--O Parametro PRELOAD="metadata" faz só o carregamento do arquivo, sem executa-lo-->
+    <!--O Parametro CONTROLS sem o autoplay irá aguardar o click na tecla play para iniciar o áudio-->
+    <p>Se seu navegador não reproduziu o som é porque ele não suporta o arquivo. <br>
+    Clique <a href="midia/guanacast-33.mp3">aqui</a> para fazer o download do arquivo</p>
+
+</body>
+</html>

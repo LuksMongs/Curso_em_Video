@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    background-color:rgb(56, 85, 114);
+    font: normal 16px Arial;  
+   
+}
+
+h1, footer{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: rgb(187, 221, 255);
+    padding: 5px 15px;
+    margin: 0px auto;
+    width: 400px;
+    border-radius: 20px;    
+}
+input#anonasc{
+    text-align: center;
+}
+
+div#detectado{
+    padding:5px;
+    text-align: center;
+}
+
+p#btnverificar{
+    margin-left: 260px;
+}
+
+img#foto{
+width: 200px;
+margin: 10px 100px;
+}

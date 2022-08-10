@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #dv1{
+            background-color: rgb(177, 211, 176);
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <title>Eventos Mouse</title>
+</head>
+<body onload="ola()">
+    <div id="dv1" onmouseover="mudaCor(this, '#00f')" onmouseout="mudaCor(document.getElementById('dv1'),'#fff')"></div>
+    </br>
+    <button id="btnAlert" onclick="alert('Oi Mundo!')" onmouseover='mudaPosicao(document.getElementById("dv1")) + mudaCor(document.getElementById("dv1"),"#f00")'>Clique e mim</button>
+    <script src="/testeCFB06-Eventos.js"></script>
+</body>
+</html>

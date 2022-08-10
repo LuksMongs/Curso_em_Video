@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/*  Poderia ter PROGRAMADO uma VARIAVEL para as cores, font-family...  */
+:root{
+    --cor0: #c5ebf6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 
+    --font-android: 'Android', cursive;
+}
+/*  E para utilizar essas VARIAVEIS do ROOT utilize o comando var(--cor0);  */ 
+/*    ex.:  background-color: var(--cor1); */
+
+@font-face {
+    font-family:'android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    /*Quando colocamos ./ significa que estamos usando um arquivo que está na mesma pasta */
+    /*Quando colocamos ../ significa que é um arquivo que está na pasta acima*/
+}   
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 160px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(25, 80, 59),rgb(94, 233, 180));
+    text-align: center;
+    padding: 20px 20px 5px 20px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+header > h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    padding-top: 20px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.719);
+}
+
+header > p{
+    padding-top: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.616);
+}
+
+nav{
+    padding-top: 5px;
+    text-align: left;
+}
+
+nav > a{
+    padding:5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color:#063d1e;
+    text-decoration: overline;
+    background-color: #3ddc84;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+
+body > main{
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2{
+    padding: 10px 20px 0px 20px;
+    font-family: 'android', sans-serif; 
+    color: darkgreen;
+
+} 
+
+p{
+    text-indent: 40px;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+h3{
+    margin: 05px 20px;
+    padding-left: 10px;
+    font-family: 'android', sans-serif; 
+    background-image: linear-gradient(to right, rgb(94, 233, 180), white);
+    color: darkgreen;
+}
+i{
+    text-indent: 0px;
+}
+
+p > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+
+img{
+    display: flex;
+    margin: auto;
+}
+
+iframe{
+    background-color: darkgreen;
+    padding: 4%;
+    margin-bottom: 10px;
+    width: 92.3%;
+}
+
+div{
+    background-color: rgb(181, 231, 214);
+    width: 90%;
+    margin: auto;
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.411);
+}
+
+h4{
+    background-color: rgb(23, 153, 92);
+    margin-top: 50px;
+    margin: 0 -10px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+ul{
+    list-style: inside;
+    columns: 2;
+    margin-left: 60px;
+    list-style-type:'\2714';
+
+}
+
+div > p{
+    margin: 10px;
+    padding: 0;
+}
+
+.prefooter{
+    margin: 10px 20px;
+}
+
+main{
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedagem LOCAL</h1> 
+    <hr>   
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meu-video.mp4" width="500px" controls poster="imagens/limoes-capa.png"></video>
+    <p>Os Parametros WIDTH (largura), CONTROLS (area de controle do vídeo) e POSTER (adicionar uma CAPA ao vídeo) podem ser usados</p>
+    <p>Dependendo do navegador, alguns formatos de vídeos não são compatíveis. Nesse caso monte uma lista de diferentes extensões:</p>
+    <video width="500px" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4"> <!--É o FORMATO mais indicado-->
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+    </video>
+    <p>Se o vídeo não foi carregado é porque seu navegador não suporta tais formatos. Neste caso clique <a href="midia/meu-video.mp4">aqui</a> para realizar o download.</p>
+    <p>Esta forma de ospedagem LOCAL, gera um consumo muito grande de DADOS, podendo gerar um gasto grande de consumo de dados</p>
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <p>No YOUTUBE vá na SETA de compartilhamento e o próprio YouTube gera um código pra você. É só copiar e colar.</p>
+    <p>Inclusive até o Parâmetro IFRAME SRC já vem pronto do Youtube.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FRI_fa5VXhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeo do VIMEO</h1>
+    <p>segue o mesmo esquema do youtube basicamente indo no SHARE</p>
+    <iframe src="https://player.vimeo.com/video/177903103?h=b928d39514&color=c9ff23" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/177903103">IceCreaming Summer 2016</a> from <a href="https://vimeo.com/mascista">Mascista</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    <p>Essas Duas últimas formas demonstradas acima NÃO consomem banda do servidor local, pois os vídeos rodam diretamente nos sites de vídeo.</p>
+</body>
+</html>

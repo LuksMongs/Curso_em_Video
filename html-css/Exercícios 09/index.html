@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listas em HTML5</title>
+    </head>
+    <body>
+        <h1>Trabalhando com Listas</h1>
+        <hr>
+        <h2>Listas Ordenadas</h2>
+            <p>São listas que a ordem é IMPORTANTE. Para não escrever a lista toda colocando os números um a um, segue ex.<br> 
+            1- acordar <br>
+            2- levantar <br>
+            3- escovar os dente<br>
+            4- pentear o cabelo <br>
+            5- arrumar a cama... <br>
+            <em>em uma lista assim, caso queira adicinar um item, terá que alterar a numeração toda manualmente.</em></p>
+            <p>Portando devemos usar o comando (tag) OL (lista ordenada - numerada) e UL (lista nao-ordenada - somente tabulaçao). <br>
+            Cada item dessas listas devem estar marcados (entre) com a tag LI. ex. <br>
+            <ol>
+                <li>Acordar</li>
+                <li>Levantar</li>
+                <li>Escovar os dente</li>
+                <li>Penterar o cabelo</li>
+                <li>Arrumar a cama</li>
+                <li>...</li><br>
+                <em>essa lista pode ser personalizada usando o parâmetro TYPE ficando &lt;ol type=" " &gt; e pode iniciar a contagem a <br> 
+                partir do número escolhido, com o parâmetro START ficando &lt;ol start=" nº escolhido"&gt;. ou colocando tudo junto: &lt;ol type=" " start=" nº escolhido"&gt;. <br>
+                O <strong>type</strong> tem 4 opções: 1. (numérico) A.(ordem alfabética Maiúscula) a.(alfab. minuscula) I.(romanos Maiúscula) i.(romano minuscula) </em><br>
+                E na lista NÃO oredenada tem as opções: type="disco/circle/square".
+            </ol></p>
+            <p>Para uma lista <strong>NÃO</strong> ordenada (UL) segue o exemplo. <br>
+            <ul> Preciso Comprar:
+                <li>pão</li>
+                <li>Leite</li>
+                <li>Escovar de dentes</li>
+                <li>queijo</li>
+                <li>manteiga</li>
+                <li>...</li>
+            </ul></p>
+            <p>Uma LISTA pode conter outras (sublistas) usando os mesmos princípios de OL ou UL dentro de uma LI. <br>
+                <ul>
+                    <li>Misto Quente</li>
+                        <ol>
+                            <li>pão</li>
+                            <li>presunto</li>
+                            <li>queijo</li>
+                            <li>manteiga</li>
+                        </ol>
+                    <li>Hamburger</li>
+                        <ul>
+                            <li>pao</li>
+                                <ol>
+                                    <li>com gergelim</li>
+                                    <li>com parmesão</li>
+                                    <li>integral</li>
+                                </ol>
+                            <li>carne</li>
+                                <ol>
+                                    <li>bovina</li>
+                                    <li>frango</li>
+                                </ol>
+                        </ul>
+                </ul>
+            </p>
+        <h2>Lista de DEFINIÇÃO</h2>
+            <p>São listas tipo de dicionário. Iniciadas pela tag DL em seguida define-se um TERMO (tag DT) <br>
+                e uma DESCRIÇÃO (tag DD) segue exemplo. <br>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para criação do design de um site.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para criar interatividade de um site.</dd>
+            </dl></p>
+            
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(44, 44, 65);
+            color: white;
+            font: normal 18px Arial;
+
+        }
+    </style>
+    <title>Aprendendo DOM</title>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui veremos os resultados</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] //indica que estamos selecionando o 1º parágrafo (zerinho)
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write ('Este parágrafo escrevi através do SCRIPT do JS')
+        window.document.write('</br>') // só para quebrar a linha
+        window.document.write (p1.innerText) // é a repetição do parágrafo ZERO.
+        p1.style.color = 'blue' //muda a variável p1. como p1 recebe parágrafo zero, o p ficará azul
+        corpo.style.background = 'black' //mudamos a cor de fundo do BODY
+        window.document.write('</br>')
+        window.document.write(p2.innerText) //replica o texto (sem formatacao) do paragrafo 2
+        window.document.write('</br>')
+        window.document.write(p2.innerHTML) //replica o texto COM a formatacao (negrito no DOM)
+    </script>
+
+</body>
+</html>
