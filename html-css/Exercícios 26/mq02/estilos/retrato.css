@@ -1,1 +1,9 @@
 @charset "UTF-8";
+
+/*Configuracao retrato (em pé)*/
+
+body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
